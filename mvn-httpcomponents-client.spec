@@ -4,7 +4,7 @@
 #
 Name     : mvn-httpcomponents-client
 Version  : 4.0.2
-Release  : 1
+Release  : 2
 URL      : https://github.com/apache/httpcomponents-client/archive/4.0.2.tar.gz
 Source0  : https://github.com/apache/httpcomponents-client/archive/4.0.2.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar
@@ -36,23 +36,23 @@ data components for the mvn-httpcomponents-client package.
 %build
 
 %install
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2
-
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
 cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
 
 
 %files
@@ -60,9 +60,9 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponen
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar
 /usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.pom
-/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.3.5.jar
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.jar
 /usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5/httpclient-4.3.5.pom
-/usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.3.5/httpcomponents-client-4.0.2.pom
-/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/4.0.2.tar.gz
-/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5/httpclient-4.0.2.jar
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5/httpcomponents-client-4.3.5.pom
