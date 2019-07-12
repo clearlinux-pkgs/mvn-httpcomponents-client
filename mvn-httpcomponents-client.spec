@@ -4,7 +4,7 @@
 #
 Name     : mvn-httpcomponents-client
 Version  : 4.0.2
-Release  : 3
+Release  : 4
 URL      : https://github.com/apache/httpcomponents-client/archive/4.0.2.tar.gz
 Source0  : https://github.com/apache/httpcomponents-client/archive/4.0.2.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar
@@ -15,6 +15,9 @@ Source5  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4
 Source6  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.pom
 Source7  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom
 Source8  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.3.5/httpcomponents-client-4.3.5.pom
+Source9  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+Source10  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar
+Source11  : https://repo1.maven.org/maven2/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -62,6 +65,15 @@ cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponen
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
 cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.5.2
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.5.2
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6
+cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6
+
 
 %files
 %defattr(-,root,root,-)
@@ -76,3 +88,6 @@ cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/httpcomponen
 /usr/share/java/.m2/repository/org/apache/httpcomponents/httpclient/4.5.6/httpclient-4.5.6.pom
 /usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.0.2/httpcomponents-client-4.0.2.pom
 /usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.3.5/httpcomponents-client-4.3.5.pom
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.jar
+/usr/share/java/.m2/repository/org/apache/httpcomponents/httpmime/4.5.6/httpmime-4.5.6.pom
